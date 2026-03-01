@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 업로드</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      padding: 18px;
+      width: 300px;
+      margin: 0;
+      background: linear-gradient(135deg, #eef2f7, #f8fafc);
+    }
+    h3 {
+      margin: 0 0 18px 0;
+      font-size: 18px;
+      text-align: center;
+      color: #2c3e50;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background: #4a90e2;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 10px rgba(74, 144, 226, 0.2);
+    }
+    button:hover {
+      background: #357bd8;
+      transform: translateY(-1px);
+    }
+    button:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+    #result {
+      margin-top: 16px;
+      padding: 10px;
+      background: white;
+      border-radius: 10px;
+      font-size: 13px;
+      word-break: break-all;
+      min-height: 24px;
+      border: 1px solid #e3e8ef;
+    }
+    #result.success {
+      border-color: #2ecc71;
+      background: #f0fff6;
+      color: #27ae60;
+    }
+    #result.error {
+      border-color: #e74c3c;
+      background: #fff5f5;
+      color: #c0392b;
+    }
+    #result a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+    #result a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h3>이미지 업로드</h3>
+  <input type="file" id="fileInput" accept="image/*" hidden>
+  <button id="uploadBtn">이미지 선택</button>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>

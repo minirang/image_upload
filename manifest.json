@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Image Upload Extension",
+  "description": "파란행성 이미지 API로 이미지를 업로드하는 확장 프로그램",
+  "version": "1.0",
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [],
+
+  "host_permissions": [
+    "https://img.bloupla.net/*"
+  ]
+}

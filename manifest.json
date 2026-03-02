@@ -5,7 +5,18 @@
   "version": "1.0",
 
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "파란행성.png",
+      "48": "파란행성.png",
+      "128": "파란행성.png"
+    }
+  },
+
+  "icons": {
+    "16": "파란행성.png",
+    "48": "파란행성.png",
+    "128": "파란행성.png"
   },
 
   "permissions": [],
